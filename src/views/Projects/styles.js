@@ -48,14 +48,18 @@ export const Title = styled.h2`
     font-weight: 700;
     line-height: 180%;
 `
+export const Link = styled.a`
+    text-decoration: none;
+`
+
 
 export const Projects = styled.div`
 
 `
 
 export const ProjectImg = styled.div`
-    width: 288px;
-    height: 255.163px;
+    width: 298px;
+    height: 265.163px;
     flex-shrink: 0;
     margin-top: 80px;
     margin-left: 20px;
@@ -64,7 +68,7 @@ export const ProjectImg = styled.div`
 
     IMG{
         width: 288px;
-    height: 255.163px;
+        height: 255.163px;
     }
 `
 

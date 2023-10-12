@@ -7,6 +7,8 @@ import Email from '../../assets/icons/email.svg';
 
 
 export default function Contacts() {
+
+  
   return (
     <Styles.Container>
       <Header />
