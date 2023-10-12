@@ -3,6 +3,7 @@ import * as Styles from './styles';
 import Header from '../../components/Header'
 import Cesar from '../../assets/images/cesar-photo.jpg';
 import Fernanda from '../../assets/images/fernanda-photo.jpg';
+import Aspas from '../../assets/icons/simbol.svg';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -36,8 +37,9 @@ export default function Recommendations() {
                   </Styles.ImgText>
                 </Styles.ImgContainer>
                 <Styles.TextContainer>
-                Vivian's is an excellent person to work with. Eager to learn and an excellent developer. She's also a very good team player, always helping others and exposing her ideas.
-                I really appreciated being her manager and I definitely recommend her.</Styles.TextContainer>
+                  <img src={Aspas} alt="Aspas_icon" /> <br />
+                  Vivian is an excellent person to work with. Eager to learn and an excellent developer. She's also a very good team player, always helping others and exposing her ideas.
+                  I really appreciated being her manager and I definitely recommend her.</Styles.TextContainer>
               </Styles.ContentContainer>
           </SwiperSlide>
           <SwiperSlide>
@@ -49,7 +51,8 @@ export default function Recommendations() {
                   </Styles.ImgText>
                 </Styles.ImgContainer>
                 <Styles.TextContainer>
-                Vívian is a very dedicated and committed professional. She learns everything very quickly and in a short time took over the management of projects in the area. She has great development potential and great interest in learning new things! Loves a challenge, and easily establishes trusting relationships
+                  <img src={Aspas} alt="Aspas_icon" /> <br />
+                  Vivian is a very dedicated and committed professional. She learns everything very quickly and in a short time took over the management of projects in the area. She has great development potential and great interest in learning new things! Loves a challenge, and easily establishes trusting relationships
                 </Styles.TextContainer>
             </Styles.ContentContainer>
           </SwiperSlide>

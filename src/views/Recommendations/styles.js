@@ -19,9 +19,7 @@ export const MainContainer = styled.div`
 
     .swiper-pagination-bullet {
         background-color: #DA8537;
-    }
-
-    
+    } 
 ` 
 export const Title = styled.h2`
     width: 608px;
@@ -31,7 +29,7 @@ export const Title = styled.h2`
     margin-left: 150px;
 
     color: #DA8537;
-    font-family: Poppins;
+    font-family: Playfair Display;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -45,20 +43,19 @@ export const ContentContainer = styled.div`
 
 export const ImgContainer = styled.div`
  display: table-row;
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     flex-shrink: 0;
     margin-left: 150px;
     margin-bottom: 100px;
-    border-radius: 5px;
 
     background-color: #DA8537;
 
-    img{
-        margin: auto;
+    img {
+        margin-left: 10px;
+        /* margin: auto; */
         width: 300px;
         height: 300px;
-        border-radius: 5px;
     }
 ` 
 export const ImgText = styled.p`
@@ -68,10 +65,14 @@ export const ImgText = styled.p`
 `
 export const TextContainer = styled.p`
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 1px;
     width: 500px;
 
     color: #F2E0CF;
     font-weight: 300;
     font-size: 25px;
+
+    img {
+        margin-bottom: 30px;
+    }
 `  

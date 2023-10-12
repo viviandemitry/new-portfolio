@@ -22,48 +22,84 @@ export const HomeButton = styled.button`
     background: none;
     border: none;
 
-    color: #F2E0CF;
+    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF"};
     font-family: Poppins;
     font-size: ${px2vw(16)};
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+
+    &:hover {
+        box-shadow: ${(props) => props.local === "/contacts" ? "inset 100px 0 0 0 color #15655B" : "inset 100px 0 0 0 color #DA8537"};
+    }
+    &:active {
+        color: #15655B;
+    }
 `
 
 export const ProjectsButton = styled.button`
     background: none;
     border: none;
 
-    color: #F2E0CF;
+    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF" };
     font-family: Poppins;
     font-size: ${px2vw(16)};
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+
+    &:hover {
+        box-shadow: inset 100px 0 0 0 #DA8537;
+    }
+    &:active {
+        color: #15655B;
+    }
 `
 
 export const RecommendationsButton = styled.button`
     Background: none;
     border: none;
 
-    color: #F2E0CF;
+    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF" };
     font-family: Poppins;
     font-size: ${px2vw(16)};
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+
+    &:hover {
+        box-shadow: inset 160px 0 0 0 #DA8537;
+    }
+    &:active {
+        color: #15655B;
+    }
 `
 
 export const ContactsButton = styled.button`
     background: none;
     border: none;
 
-    color: #F2E0CF;
+    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF" };
     font-family: Poppins;
     font-size: ${px2vw(16)};
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+
+    &:hover {
+        box-shadow: inset 100px 0 0 0 #DA8537;
+    }
+    &:active {
+        color: #15655B;
+    }
 `
 
 export const AboutButton = styled.button`
@@ -72,7 +108,7 @@ export const AboutButton = styled.button`
     justify-content: center;
     align-items: center;
     background: #DA8537;
-    border-radius: ${px2vw(5)};
+    /* border-radius: ${px2vw(5)}; */
     border: none;
     margin-left: ${px2vw(780)};
 
@@ -82,4 +118,10 @@ export const AboutButton = styled.button`
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    &:hover {
+        padding: ${px2vw(10)} ${px2vw(22)};
+        margin-left: ${px2vw(775)};
+        font-weight: 400;
+    }
 `

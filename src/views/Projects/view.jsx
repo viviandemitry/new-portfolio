@@ -26,30 +26,36 @@ export default function Projects() {
         <Styles.Title>
         PROJECTS
         </Styles.Title>
-        <Styles.Projects>
-          <Styles.ProjectImg>
-          <img src={RobotWeb} alt="Robot Website" />
-          </Styles.ProjectImg>
-          <Styles.ProjectTitle>
-            Robot Website
-          </Styles.ProjectTitle>
-        </Styles.Projects>
-        <Styles.Projects>
-          <Styles.ProjectImg>
+        <Styles.Link href="https://robot-blog.vercel.app/" target="_blank">
+          <Styles.Projects>
+            <Styles.ProjectImg>
+            <img src={RobotWeb} alt="Robot Website" />
+            </Styles.ProjectImg>
+            <Styles.ProjectTitle>
+              Robot Website
+            </Styles.ProjectTitle>
+          </Styles.Projects>
+        </Styles.Link>
+        <Styles.Link>
+          <Styles.Projects>
+            <Styles.ProjectImg>
 
-          </Styles.ProjectImg>
-          <Styles.ProjectTitle>
-            Donation Website
-          </Styles.ProjectTitle>
-        </Styles.Projects>
-        <Styles.Projects>
-          <Styles.ProjectImg>
+            </Styles.ProjectImg>
+            <Styles.ProjectTitle>
+              Donation Website
+            </Styles.ProjectTitle>
+          </Styles.Projects>
+        </Styles.Link>
+        <Styles.Link>
+          <Styles.Projects>
+            <Styles.ProjectImg>
 
-          </Styles.ProjectImg>
-          <Styles.ProjectTitle>
-            E-commerce
-          </Styles.ProjectTitle>
-        </Styles.Projects>
+            </Styles.ProjectImg>
+            <Styles.ProjectTitle>
+              E-commerce
+            </Styles.ProjectTitle>
+          </Styles.Projects>
+        </Styles.Link>
       </Styles.ContainerBottom> 
     </Styles.Container>
   )
