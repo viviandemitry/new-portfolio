@@ -12,17 +12,6 @@ export const Container = styled.div`
     background-size: 100%;
 `
 
-// export const ImgContainer = styled.div`
-//     /* width: 100%;
-//     height: 100vh;
-//     overflow: hidden;
-//     background-image: url(${Photo});
-//     background-repeat: no-repeat;
-//     background-size: auto; */
-
-
-
-
 export const TitleAbout = styled.h2`
     color: #DA8537;
 
