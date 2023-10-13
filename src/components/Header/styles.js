@@ -29,10 +29,10 @@ export const HomeButton = styled.button`
     font-weight: 300;
     line-height: normal;
 
-    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
 
     &:hover {
-        box-shadow: ${(props) => props.local === "/contacts" ? "inset 100px 0 0 0 color #15655B" : "inset 100px 0 0 0 color #DA8537"};
+        background-color: ${(props) => props.local === "/contacts" ? "#15655B;" : "#DA8537;"};
     }
     &:active {
         color: #15655B;
