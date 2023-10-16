@@ -33,18 +33,18 @@ export default function Header() {
 return (
     <Styles.Container>
       <Styles.FirstContainer>
-        <Styles.HomeButton onClick={goHome} local={location.pathname}>
+        <Styles.NavButton onClick={goHome} local={location.pathname}>
          HOME
-        </Styles.HomeButton>
-        <Styles.ProjectsButton type="button" onClick={goProjects} local={location.pathname}> 
+        </Styles.NavButton>
+        <Styles.NavButton type="button" onClick={goProjects} local={location.pathname}> 
           PROJECTS
-        </Styles.ProjectsButton>
-        <Styles.RecommendationsButton type="button" onClick={goRecommendations} local={location.pathname}>
+        </Styles.NavButton>
+        <Styles.NavButton type="button" onClick={goRecommendations} local={location.pathname}>
           RECOMMENDATIONS
-        </Styles.RecommendationsButton>
-        <Styles.ContactsButton type="button" onClick={goContacts} local={location.pathname}>
+        </Styles.NavButton>
+        <Styles.NavButton type="button" onClick={goContacts} local={location.pathname}>
           CONTACTS
-        </Styles.ContactsButton>
+        </Styles.NavButton>
       </Styles.FirstContainer>
       {location.pathname === "/" && (
         <Styles.LastContainer>

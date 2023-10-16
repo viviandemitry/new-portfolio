@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import About from '../../components/About'
 import Photo from '../../assets/images/photo_home_page.png';
 import { useSelector} from 'react-redux';
+import Square from '../../assets/icons/square-about.svg';
 
 export default function Home() {
 
@@ -33,6 +34,18 @@ export default function Home() {
         <Styles.ImgContainer>
           <img src={Photo} alt="Photo_home" />
         </Styles.ImgContainer>
+        }
+         { isTransformed &&
+         <Styles.TextABout>
+          <Styles.TitleAbout>
+            About me
+          </Styles.TitleAbout>
+          <Styles.AboutText>
+            <Styles.FirstTextLine> <img src={Square} alt="Square" /> I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I'm <br /></Styles.FirstTextLine>
+            <Styles.SecondTextLine> <img src={Square} alt="Square" /> I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I' <br /></Styles.SecondTextLine>
+            <Styles.ThirdTextLine> <img src={Square} alt="Square" /> I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I'<br /></Styles.ThirdTextLine>
+          </Styles.AboutText> 
+          </Styles.TextABout>
         }
     </Styles.Container>
   )
