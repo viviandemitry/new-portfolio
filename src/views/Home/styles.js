@@ -65,3 +65,60 @@ export const ImgContainer = styled.div`
 export const TextHiden = styled.span`
     color: #DA8537; 
 `
+
+export const TextABout = styled.div`
+    position: absolute;
+    display: table-row;
+    width: 55%;
+    height:90%;
+    margin-left: 600px;
+`
+export const TitleAbout = styled.h2`
+    position: relative;
+    color: #DA8537;
+    margin-top: 10px; 
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+`
+
+export const AboutText = styled.p`
+    margin-top: 80px;
+ 
+    color: #F2E0CF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 180%; /* 36px */
+    
+`
+export const FirstTextLine = styled.div`
+    margin-left: 180px;
+    width: 75%;
+
+    img{
+        width: 10px;
+        height: 10px;
+    }
+`
+export const SecondTextLine = styled.div`
+    margin-left: 230px;
+    width: 65%;
+
+    img{
+        width: 10px;
+        height: 10px;
+    }
+`
+export const ThirdTextLine = styled.div`
+    margin-left: 320px;
+    width: 55%;
+
+    img{
+        width: 10px;
+        height: 10px;
+    }
+`

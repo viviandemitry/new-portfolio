@@ -4,7 +4,7 @@ import { device } from "../../utils/brakePoints";
 
 export const Container = styled.div`
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 100%;
     background-color: none;
     margin-top: ${px2vw(28)};
@@ -18,11 +18,11 @@ export const LastContainer = styled.div`
     
     justify-content: end;
 `
-export const HomeButton = styled.button`
+export const NavButton = styled.button`
     background: none;
     border: none;
 
-    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF"};
+    color: #F2E0CF;
     font-family: Poppins;
     font-size: ${px2vw(16)};
     font-style: normal;
@@ -32,78 +32,14 @@ export const HomeButton = styled.button`
     transition: color .2s ease-in-out, background-color .2s ease-in-out;
 
     &:hover {
-        background-color: ${(props) => props.local === "/contacts" ? "#15655B;" : "#DA8537;"};
-    }
-    &:active {
-        color: #15655B;
-    }
-`
-
-export const ProjectsButton = styled.button`
-    background: none;
-    border: none;
-
-    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF" };
-    font-family: Poppins;
-    font-size: ${px2vw(16)};
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-
-    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
-
-    &:hover {
-        box-shadow: inset 100px 0 0 0 #DA8537;
-    }
-    &:active {
-        color: #15655B;
-    }
-`
-
-export const RecommendationsButton = styled.button`
-    Background: none;
-    border: none;
-
-    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF" };
-    font-family: Poppins;
-    font-size: ${px2vw(16)};
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-
-    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
-
-    &:hover {
-        box-shadow: inset 160px 0 0 0 #DA8537;
-    }
-    &:active {
-        color: #15655B;
-    }
-`
-
-export const ContactsButton = styled.button`
-    background: none;
-    border: none;
-
-    color: ${(props) => props.local === "/contacts" ? "#15655B" : "#F2E0CF" };
-    font-family: Poppins;
-    font-size: ${px2vw(16)};
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-
-    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
-
-    &:hover {
-        box-shadow: inset 100px 0 0 0 #DA8537;
-    }
-    &:active {
-        color: #15655B;
-    }
+        background-color: ${(props) => props.local === "/" || props.local === "/recommendations" ? "#DA8537;" : "#15655B;"};
+    } 
 `
 
 export const AboutButton = styled.button`
     display: flex;
+    position:relative;
+    z-index: 2;
     padding: ${px2vw(10)} ${px2vw(20)};
     justify-content: center;
     align-items: center;
