@@ -8,20 +8,20 @@ export const Container = styled.div`
     width: 100%;
     background-color: none;
     margin-top: ${px2vw(28)};
-    margin-left: ${px2vw(150)};
+    margin-left: ${px2vw(140)};
 `
 export const FirstContainer = styled.div`
     display: flex;
-    
 `
 export const LastContainer = styled.div`
-    
     justify-content: end;
 `
 export const NavButton = styled.button`
     background: none;
     border: none;
-
+    padding: ${px2vw(10)};
+    cursor:pointer;
+    
     color: #F2E0CF;
     font-family: Poppins;
     font-size: ${px2vw(16)};
@@ -40,11 +40,11 @@ export const AboutButton = styled.button`
     display: flex;
     position:relative;
     z-index: 2;
-    padding: ${px2vw(10)} ${px2vw(20)};
+    padding: ${px2vw(10)};
     justify-content: center;
     align-items: center;
+    cursor:pointer;
     background: #DA8537;
-    /* border-radius: ${px2vw(5)}; */
     border: none;
     margin-left: ${px2vw(780)};
 
@@ -56,8 +56,7 @@ export const AboutButton = styled.button`
     line-height: normal;
 
     &:hover {
-        padding: ${px2vw(10)} ${px2vw(22)};
-        margin-left: ${px2vw(775)};
+        color: #15655B;
         font-weight: 400;
     }
 `

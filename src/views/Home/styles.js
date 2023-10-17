@@ -5,7 +5,7 @@ import Photo from '../../assets/images/photo_home_page.png'
 
 export const Container = styled.div`
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
 
     background: rgba(21, 101, 91, 0.95);
@@ -13,7 +13,6 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
     width:50%;
-
 ` 
 
 export const Title = styled.h2`
@@ -71,7 +70,7 @@ export const TextABout = styled.div`
     display: table-row;
     width: 55%;
     height:90%;
-    margin-left: 600px;
+    margin-left: 800px;
 `
 export const TitleAbout = styled.h2`
     position: relative;
@@ -82,43 +81,60 @@ export const TitleAbout = styled.h2`
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 72px */
+
+    &:hover{
+        font-size: 60.5px;
+    }
 `
 
 export const AboutText = styled.p`
     margin-top: 80px;
- 
     color: #F2E0CF;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 200;
-    line-height: 180%; /* 36px */
+    line-height: 180%; /* 36px */ 
     
 `
 export const FirstTextLine = styled.div`
-    margin-left: 180px;
+    margin-bottom: 20px;
+    margin-left: -100px;
     width: 75%;
 
     img{
         width: 10px;
         height: 10px;
     }
+
+    &:hover{
+        font-size: 16.3px;
+    }
 `
 export const SecondTextLine = styled.div`
-    margin-left: 230px;
+    margin-bottom: 20px;
+    margin-left: -50px;
     width: 65%;
 
     img{
         width: 10px;
         height: 10px;
     }
+
+    &:hover{
+        font-size: 16.3px;
+    }
 `
 export const ThirdTextLine = styled.div`
-    margin-left: 320px;
+    margin-left: 60px;
     width: 55%;
 
     img{
         width: 10px;
         height: 10px;
+    }
+
+    &:hover{
+        font-size: 16.3px;
     }
 `
