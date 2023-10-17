@@ -1,10 +1,9 @@
 # Portfolio
 
+Check here: https://new-portfolio-ecru-two.vercel.app/   *IT'S NOT READY YET.
+
 Design
 + Figma
-
-check here: https://new-portfolio-ecru-two.vercel.app/
-
 <p><img src="src/assets/images/Section 1.png"></p>
 
 Frontend
