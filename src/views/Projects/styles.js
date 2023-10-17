@@ -24,6 +24,11 @@ export const Icons = styled.div`
         width: 70px;
         height: 70px;
         padding-left: 130px;
+
+        &:hover{
+        width: 65px;
+        height: 65px;
+     }
         
     }
 ` 
@@ -66,9 +71,14 @@ export const ProjectImg = styled.div`
 
     background: #DA8537;
 
-    IMG{
+    img {
         width: 288px;
         height: 255.163px;
+    }
+
+    &:hover{
+        width: 305px;
+        height: 270px;
     }
 `
 
@@ -80,5 +90,10 @@ export const ProjectTitle = styled.h4`
     font-style: normal;
     font-weight: 300;
     line-height: 120%; /* 24px */
+
+    &:hover{
+        color: #DA8537;
+        font-size: 22px;
+    }
 
 `

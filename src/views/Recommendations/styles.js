@@ -37,12 +37,11 @@ export const Title = styled.h2`
 ` 
 
 export const ContentContainer = styled.div`
-    display: flex;
-    
+    display: flex;   
 ` 
 
 export const ImgContainer = styled.div`
- display: table-row;
+    display: table-row;
     width: 310px;
     height: 310px;
     flex-shrink: 0;
@@ -53,7 +52,6 @@ export const ImgContainer = styled.div`
 
     img {
         margin-left: 10px;
-        /* margin: auto; */
         width: 300px;
         height: 300px;
     }

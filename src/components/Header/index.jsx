@@ -3,12 +3,15 @@ import * as Styles from './styles';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { HandleTransformed } from '../../storage/slice'
+import { useSelector} from 'react-redux';
 
 export default function Header() {
 
   const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useDispatch();
+  const isTransformed = useSelector((state) => state.isTransformed);
+
 
   function goHome(){
     navigate("/")
@@ -48,9 +51,16 @@ return (
       </Styles.FirstContainer>
       {location.pathname === "/" && (
         <Styles.LastContainer>
+          { !isTransformed && 
           <Styles.AboutButton type="button" onClick={handleClick}>
             ABOUT
           </Styles.AboutButton>
+          }
+          { isTransformed && 
+          <Styles.AboutButton type="button" onClick={handleClick}>
+            HIDE
+          </Styles.AboutButton>
+          }
         </Styles.LastContainer>  
       )}      
     </Styles.Container>
