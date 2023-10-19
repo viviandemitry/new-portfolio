@@ -22,15 +22,14 @@ export const MainContainer = styled.div`
     } 
 ` 
 export const Title = styled.h2`
-    width: 608px;
-    height: 142px;
-    flex-shrink: 0;
-    margin-top: 100px;
+    width: ${px2vw(608)};
+    height: ${px2vw(142)};
+    margin-top: ${px2vw(100)};
     margin-left: 150px;
 
     color: #DA8537;
     font-family: Playfair Display;
-    font-size: 40px;
+    font-size: ${px2vw(40)};
     font-style: normal;
     font-weight: 700;
     line-height: 180%;
@@ -42,35 +41,35 @@ export const ContentContainer = styled.div`
 
 export const ImgContainer = styled.div`
     display: table-row;
-    width: 310px;
-    height: 310px;
+    width: ${px2vw(310)};
+    height: ${px2vw(310)};
     flex-shrink: 0;
-    margin-left: 150px;
-    margin-bottom: 100px;
+    margin-left: ${px2vw(150)};
+    margin-bottom: ${px2vw(100)};
 
     background-color: #DA8537;
 
     img {
-        margin-left: 10px;
-        width: 300px;
-        height: 300px;
+        margin-left: ${px2vw(10)};
+        width: ${px2vw(300)};
+        height: ${px2vw(300)};
     }
 ` 
 export const ImgText = styled.p`
     color: #F2E0CF;
     font-weight: 300;
-    font-size: 15px;
+    font-size: ${px2vw(15)};
 `
 export const TextContainer = styled.p`
-    margin-left: 100px;
-    margin-top: 1px;
-    width: 500px;
+    margin-left: ${px2vw(100)};
+    margin-top: ${px2vw(1)};
+    width: ${px2vw(600)};
 
     color: #F2E0CF;
     font-weight: 300;
-    font-size: 25px;
+    font-size: ${px2vw(25)};
 
     img {
-        margin-bottom: 30px;
+        margin-bottom: ${px2vw(30)};
     }
 `  

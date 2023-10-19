@@ -4,62 +4,108 @@ import { device } from "../../utils/brakePoints";
 
 export const Container = styled.div`
     display:flex;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #DA8537;
+
+    @media ${device.mobileM}{
+        display:table-row;
+        /* flex-direction:column; */
+        border: solid red;
+        width: 100vw;
+        height: 100vh;
+    }
 ` 
 
 export const ContainerLeft = styled.div`
     width: 60%;
+
+    @media ${device.mobileM}{
+        display:table-row;
+        /* flex-direction:column; */
+        width: 100vw;
+        /* height: 100vh; */
+        /* flex-grow: 0; */
+        height: 35vh;
+    }
 `
 
 export const ContainerRight = styled.div`
     display: flex;
     width: 40%;
-    padding-top: 250px;
-    padding-left: 100px;
-    /* border-left: solid #15655B; */
+    padding-top: ${px2vw(250)};
+    padding-left: ${px2vw(100)};
     background-color:#15655B;
+
+    @media ${device.mobileM}{
+        width: 100vw;
+        /* height: 100vh; */
+        /* width: 100vw; */
+        /* flex-grow: 3; */
+        height:65vh;
+    }
 `
 
 export const Title = styled.h2`
-    padding-top: 100px;
-    padding-left: 150px;
+    padding-top: ${px2vw(100)};
+    padding-left: ${px2vw(150)};
 
     color: #15655B;
     font-family: Poppins;
-    font-size: 80px;
+    font-size: ${px2vw(80)};
     font-style: normal;
     font-weight: 700;
     line-height: 120%; 
+
+    @media ${device.mobileM}{
+        margin-top: ${px2vw(300)};
+        font-size: ${px2vw(100)};
+    }
 `
 
 export const Icons = styled.div`
-    padding-top: 30px;
-    padding-left: 80px;
+    padding-top: ${px2vw(30)};
+    padding-left: ${px2vw(80)};
 
     img{
-        width: 70px;
-        height: 70px;
-        padding-left:70px;
+        width: ${px2vw(70)};
+        height: ${px2vw(70)};
+        padding-left:${px2vw(70)};
 
         &:hover{
-        width: 73px;
-        height: 73px;
+        width: ${px2vw(73)};
+        height: ${px2vw(73)};
+     }
     }
-  }
+
+    @media ${device.mobileM}{
+        margin-left: ${px2vw(-50)};
+        padding-right: ${px2vw(20)};
+
+        img{
+        width: ${px2vw(150)};
+        height: ${px2vw(150)};
+        padding-left:${px2vw(150)};
+      }
+    }
 `
 
 export const Link = styled.a`
     text-decoration: none;
 `
 export const RightText = styled.p`
-    margin-left: 150px;
-    margin-top: -110px;
+    margin-left: ${px2vw(150)};
+    margin-top: ${px2vw(-110)};
     color: #DA8537;
     font-family: Poppins;
-    font-size: 50px;
+    font-size: ${px2vw(50)};
     font-style: normal;
     font-weight: 700;
     line-height: 120%; 
+
+    @media ${device.mobileM}{
+        margin-top: ${px2vw(-300)};
+        margin-left: ${px2vw(450)};
+        font-size: ${px2vw(90)};
+    }
 `

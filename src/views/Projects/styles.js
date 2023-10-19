@@ -13,22 +13,23 @@ export const Container = styled.div`
 export const Icons = styled.div`
     width: 100%;
     height: auto;
-    flex-shrink: 0;
-    padding-top: 80px;
-    /* padding-left: 150px; */
-    column-gap: 20px;
+    padding-top: ${px2vw(80)};
+    column-gap: ${px2vw(20)};
 
     background: #DA8537;
 
     img{
-        width: 70px;
-        height: 70px;
-        padding-left: 130px;
+        width: ${px2vw(70)};
+        height: ${px2vw(70)};
+        padding-left: ${px2vw(130)};
 
         &:hover{
         width: 65px;
         height: 65px;
      }
+    }
+
+    @media ${device.mobileM}{
         
     }
 ` 
