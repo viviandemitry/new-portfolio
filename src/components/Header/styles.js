@@ -7,14 +7,27 @@ export const Container = styled.div`
     position: absolute;
     width: 100%;
     background-color: none;
-    margin-top: ${px2vw(28)};
-    margin-left: ${px2vw(140)};
+    /* margin-top: ${px2vw(28)}; */
+    /* margin-left: ${px2vw(140)}; */
+
+    @media ${device.mobileM}{
+      display: table-row;
+      width: 100%;
+    }
 `
 export const FirstContainer = styled.div`
     display: flex;
+    margin-left: ${px2vw(140)};
+    margin-top: ${px2vw(28)};
 `
 export const LastContainer = styled.div`
     justify-content: end;
+    margin-top: ${px2vw(28)};
+
+    @media ${device.mobileM}{
+        margin-top: ${px2vw(1000)};
+        margin-left: ${px2vw(-650)};
+    }
 `
 export const NavButton = styled.button`
     background: none;
@@ -34,6 +47,12 @@ export const NavButton = styled.button`
     &:hover {
         background-color: ${(props) => props.local === "/" || props.local === "/recommendations" ? "#DA8537;" : "#15655B;"};
     } 
+
+    @media ${device.mobileM}{
+      font-size: ${px2vw(40)};
+      padding: ${px2vw(30)};
+      margin-top: ${px2vw(100)};
+    }
 `
 
 export const AboutButton = styled.button`
@@ -58,5 +77,12 @@ export const AboutButton = styled.button`
     &:hover {
         color: #15655B;
         font-weight: 400;
+    }
+
+    @media ${device.mobileM}{
+      display: table-row;
+      padding: ${px2vw(30)} ${px2vw(100)};
+      font-size: ${px2vw(40)};
+      border-radius: 50% 50% 0 50%;
     }
 `

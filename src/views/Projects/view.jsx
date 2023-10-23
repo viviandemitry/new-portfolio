@@ -26,36 +26,32 @@ export default function Projects() {
         <Styles.Title>
         PROJECTS
         </Styles.Title>
-        <Styles.Link href="https://robot-blog.vercel.app/" target="_blank">
-          <Styles.Projects>
-            <Styles.ProjectImg>
-            <img src={RobotWeb} alt="Robot Website" />
-            </Styles.ProjectImg>
-            <Styles.ProjectTitle>
-              Robot Website
-            </Styles.ProjectTitle>
-          </Styles.Projects>
-        </Styles.Link>
-        <Styles.Link>
-          <Styles.Projects>
-            <Styles.ProjectImg>
-
-            </Styles.ProjectImg>
-            <Styles.ProjectTitle>
-              Donation Website
-            </Styles.ProjectTitle>
-          </Styles.Projects>
-        </Styles.Link>
-        <Styles.Link>
-          <Styles.Projects>
-            <Styles.ProjectImg>
-
-            </Styles.ProjectImg>
-            <Styles.ProjectTitle>
-              E-commerce
-            </Styles.ProjectTitle>
-          </Styles.Projects>
-        </Styles.Link>
+        <Styles.ContainerProjects>
+          <Styles.Link href="https://robot-blog.vercel.app/" target="_blank">
+              <Styles.ProjectImg>
+              <img src={RobotWeb} alt="Robot Website" />
+              </Styles.ProjectImg>
+              <Styles.ProjectTitle>
+                Robot Website
+              </Styles.ProjectTitle>
+          </Styles.Link>
+          <Styles.Link href="https://robot-blog.vercel.app/" target="_blank">
+              <Styles.ProjectImg>
+              <img src={RobotWeb} alt="Robot Website" />
+              </Styles.ProjectImg>
+              <Styles.ProjectTitle>
+                Robot Website
+              </Styles.ProjectTitle>
+          </Styles.Link>
+          <Styles.Link href="https://robot-blog.vercel.app/" target="_blank">
+              <Styles.ProjectImg>
+              <img src={RobotWeb} alt="Robot Website" />
+              </Styles.ProjectImg>
+              <Styles.ProjectTitle>
+                Robot Website
+              </Styles.ProjectTitle>
+          </Styles.Link>
+        </Styles.ContainerProjects>
       </Styles.ContainerBottom> 
     </Styles.Container>
   )

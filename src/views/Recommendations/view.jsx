@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 export default function Recommendations() {
+
   return (
     <Styles.Container>
       <Header />

@@ -4,96 +4,137 @@ import { device } from "../../utils/brakePoints";
 
 export const Container = styled.div`
     width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
+    height: 100vh;
 
     background: #15655B;
+
+    @media ${device.mobileM}{
+        overflow: scroll;
+     }
 ` 
 
 export const Icons = styled.div`
     width: 100%;
     height: auto;
-    flex-shrink: 0;
-    padding-top: 80px;
-    /* padding-left: 150px; */
-    column-gap: 20px;
+    padding-top: ${px2vw(80)};
+    column-gap: ${px2vw(20)};
 
     background: #DA8537;
 
     img{
-        width: 70px;
-        height: 70px;
-        padding-left: 130px;
+        width: ${px2vw(70)};
+        height: ${px2vw(70)};
+        padding-left: ${px2vw(130)};
 
         &:hover{
-        width: 65px;
-        height: 65px;
+        width: ${px2vw(65)};
+        height: ${px2vw(65)};
      }
-        
+
+     @media ${device.mobileM}{
+        width: ${px2vw(80)};
+        height: ${px2vw(80)};
+     }
+    }
+
+    @media ${device.mobileM}{
+        display: flex;
+        height: ${px2vw(180)};
+        padding-top: ${px2vw(300)};
+        padding-bottom: ${px2vw(-80)};
     }
 ` 
 
 export const ContainerBottom = styled.div`
-    display:flex;
-    margin-top: 30px;
+    display: flex;
+    margin-top: ${px2vw(30)};
+
+    @media ${device.mobileM}{
+        margin-left: ${px2vw(30)};
+        margin-top: ${px2vw(900)};
+     }
+`
+
+export const ContainerProjects = styled.div`
+        display: flex;
+        flex-direction: row;
+        
+        @media ${device.mobileM}{
+        flex-direction: column;
+        margin-top: ${px2vw(-650)};
+        margin-left: ${px2vw(250)};
+     }
 `
 
 export const Title = styled.h2`
-    width: 401px;
-    height: 142px;
+    width: ${px2vw(401)};
+    height: ${px2vw(142)};
     transform: rotate(-90deg);
     flex-shrink: 0;
-    margin-left: -90px;
-    margin-top: 72px;
+    margin-left: ${px2vw(-90)};
+    margin-top: ${px2vw(80)};
 
     color: #F2E0CF;
     font-family: Playfair Display;
-    font-size: 50px;
+    font-size: ${px2vw(50)};
     font-style: normal;
     font-weight: 700;
     line-height: 180%;
+
+    @media ${device.mobileM}{
+        width: ${px2vw(200)};
+        height: ${px2vw(200)};
+        margin-left: 0;
+        margin-top: ${px2vw(10)};
+
+        font-size: ${px2vw(150)};
+     }
 `
 export const Link = styled.a`
     text-decoration: none;
 `
 
-
-export const Projects = styled.div`
-
-`
-
 export const ProjectImg = styled.div`
-    width: 298px;
-    height: 265.163px;
+    width: ${px2vw(310)};
+    height: ${px2vw(310)};
     flex-shrink: 0;
-    margin-top: 80px;
-    margin-left: 20px;
+    margin-top: ${px2vw(80)};
+    margin-left: ${px2vw(20)};
 
     background: #DA8537;
 
     img {
-        width: 288px;
-        height: 255.163px;
+        width: ${px2vw(300)};
+        height: ${px2vw(300)};
+
+        @media ${device.mobileM}{
+        width: ${px2vw(590)};
+        height: ${px2vw(590)};
+     }
     }
 
-    &:hover{
-        width: 305px;
-        height: 270px;
-    }
+    @media ${device.mobileM}{
+        width: ${px2vw(610)};
+        height: ${px2vw(610)};
+     }
 `
 
 export const ProjectTitle = styled.h4`
-    margin-left:20px;
+    margin-left: ${px2vw(20)};
     color: #F2E0CF;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: ${px2vw(20)};
     font-style: normal;
     font-weight: 300;
     line-height: 120%; /* 24px */
 
     &:hover{
         color: #DA8537;
-        font-size: 22px;
+        font-size: ${px2vw(21)};
     }
+
+    @media ${device.mobileM}{
+        font-size: ${px2vw(60)};
+     }
 
 `
