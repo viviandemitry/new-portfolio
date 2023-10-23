@@ -25,7 +25,7 @@ export const Title = styled.h2`
     width: ${px2vw(608)};
     height: ${px2vw(142)};
     margin-top: ${px2vw(100)};
-    margin-left: 150px;
+    margin-left: ${px2vw(150)};
 
     color: #DA8537;
     font-family: Playfair Display;
@@ -33,10 +33,22 @@ export const Title = styled.h2`
     font-style: normal;
     font-weight: 700;
     line-height: 180%;
+
+    @media ${device.mobileM}{
+        margin-top: ${px2vw(350)};
+        margin-left: ${px2vw(170)};
+        font-size: ${px2vw(80)};
+    }
 ` 
 
 export const ContentContainer = styled.div`
-    display: flex;   
+    display: flex; 
+    
+    @media ${device.mobileM}{
+        flex-direction: column;     
+        width: 100vw;
+        align-items: center;
+    }
 ` 
 
 export const ImgContainer = styled.div`
@@ -53,12 +65,39 @@ export const ImgContainer = styled.div`
         margin-left: ${px2vw(10)};
         width: ${px2vw(300)};
         height: ${px2vw(300)};
+
+        @media ${device.mobileM}{
+            width: ${px2vw(800)};
+            height: ${px2vw(800)};
+            border-radius: 50%;
+            margin: auto;
+     }
+    }
+
+    @media ${device.mobileM}{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: ${px2vw(130)};
+        border-radius: 50%;
+        width: ${px2vw(850)};
+        height: ${px2vw(850)};
     }
 ` 
 export const ImgText = styled.p`
     color: #F2E0CF;
     font-weight: 300;
     font-size: ${px2vw(15)};
+
+    @media ${device.mobileM}{
+        font-size: ${px2vw(50)};
+        width: ${px2vw(750)};
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 0;
+        margin-top: ${px2vw(100)};
+    }
 `
 export const TextContainer = styled.p`
     margin-left: ${px2vw(100)};
@@ -71,5 +110,18 @@ export const TextContainer = styled.p`
 
     img {
         margin-bottom: ${px2vw(30)};
+
+        @media ${device.mobileM}{
+            width: ${px2vw(50)};
+      }
     }
+
+    @media ${device.mobileM}{
+        margin-top: ${px2vw(120)};
+        font-size: ${px2vw(60)};
+        width: ${px2vw(850)};
+        margin-left: 0;
+        padding: 0;
+        margin-bottom: ${px2vw(300)};
+     }
 `  

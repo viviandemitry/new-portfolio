@@ -7,16 +7,22 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
+    border: solid red;
 
     background: rgba(21, 101, 91, 0.95);
 
     @media ${device.mobileM}{
         display: table-row;     
+        width: 100vw;
     }
 `
 
 export const TextContainer = styled.div`
     width:50%;
+
+    @media ${device.mobileM}{     
+        width: 100vw;
+    }
 ` 
 
 export const Title = styled.h2`
@@ -38,7 +44,7 @@ export const Title = styled.h2`
     @media ${device.mobileM}{
         margin-top: ${px2vw(-270)};
         font-size: ${px2vw(90)};
-        width: ${px2vw(800)};
+        width: 80vw;
     }
 ` 
 
@@ -57,7 +63,7 @@ export const Text = styled.p`
     @media ${device.mobileM}{
         margin-top: ${px2vw(780)};
         font-size: ${px2vw(40)};
-        width: ${px2vw(1100)};
+        width: 80vw;
     }
 `
 

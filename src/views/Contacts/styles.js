@@ -10,7 +10,6 @@ export const Container = styled.div`
 
     @media ${device.mobileM}{
         display:table-row;
-        /* flex-direction:column; */
         border: solid red;
         width: 100vw;
         height: 100vh;
@@ -22,10 +21,7 @@ export const ContainerLeft = styled.div`
 
     @media ${device.mobileM}{
         display:table-row;
-        /* flex-direction:column; */
         width: 100vw;
-        /* height: 100vh; */
-        /* flex-grow: 0; */
         height: 35vh;
     }
 `
@@ -39,9 +35,6 @@ export const ContainerRight = styled.div`
 
     @media ${device.mobileM}{
         width: 100vw;
-        /* height: 100vh; */
-        /* width: 100vw; */
-        /* flex-grow: 3; */
         height:65vh;
     }
 `

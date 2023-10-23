@@ -7,23 +7,26 @@ export const Container = styled.div`
     position: absolute;
     width: 100%;
     background-color: none;
-    margin-top: ${px2vw(28)};
-    margin-left: ${px2vw(140)};
+    /* margin-top: ${px2vw(28)}; */
+    /* margin-left: ${px2vw(140)}; */
 
     @media ${device.mobileM}{
       display: table-row;
-      width: 800px;
+      width: 100%;
     }
 `
 export const FirstContainer = styled.div`
     display: flex;
+    margin-left: ${px2vw(140)};
+    margin-top: ${px2vw(28)};
 `
 export const LastContainer = styled.div`
     justify-content: end;
+    margin-top: ${px2vw(28)};
 
     @media ${device.mobileM}{
         margin-top: ${px2vw(1000)};
-        margin-left: ${px2vw(-770)};
+        margin-left: ${px2vw(-650)};
     }
 `
 export const NavButton = styled.button`
