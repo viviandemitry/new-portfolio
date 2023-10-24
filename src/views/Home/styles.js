@@ -10,7 +10,7 @@ const transitionImg = keyframes`
 
 export const Container = styled.div`
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
 
     background: rgba(21, 101, 91, 0.95);
