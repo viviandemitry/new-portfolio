@@ -2,10 +2,11 @@ import React from 'react'
 import * as Styles from './styles';
 import Header from '../../components/Header'
 import About from '../../components/About'
-import Photo from '../../assets/images/photo_home_page.png';
+import Photo from '../../assets/images/polaroid-home.png';
+import PolaroidOne from '../../assets/images/polaroid-form.png';
+import PolaroidTwo from '../../assets/images/polaroid-nz.png';
+import PolaroidThree from '../../assets/images/polaroid-denmark.png';
 import { useSelector} from 'react-redux';
-import Vector from '../../assets/icons/vector.svg';
-import VectorClosed from '../../assets/icons/vector-closed.svg';
 
 export default function Home() {
 
@@ -28,25 +29,13 @@ export default function Home() {
             }
             </Styles.Title>
             <Styles.Text>
-            I'm an Engineer, with experience over 4 years managing and developing projects. In 2020, I started my career transition to the software engineering field, and nowadays, my top skills involve developing responsive pages, with clean code and creativity.
+            I am an engineer with over four years of experience in project management and development. In 2020, I embarked on a career transition into the field of software engineering. Presently, my primary skills revolve around the development of responsive web pages, emphasizing clean and creative coding practices.
             </Styles.Text>
         </Styles.TextContainer>
         { isTransformed ? <About /> :
         <Styles.ImgContainer>
           <img src={Photo} alt="Photo_home" />
         </Styles.ImgContainer>
-        }
-        { isTransformed &&
-        <Styles.TextABout>
-          <Styles.TitleAbout>
-            About me
-          </Styles.TitleAbout>
-          <Styles.AboutText>
-            <Styles.FirstTextLine> <img src={Vector} alt="Square" /> I'm 28 brazilian woman, passonate about travelling and animals. Nowadays I've been living in Copenhagen, Denmark, with my husband and our dog. <img src={VectorClosed} alt="Vector Closed" /><br /></Styles.FirstTextLine>
-            <Styles.SecondTextLine> <img src={Vector} alt="Square" /> I am a communicative person that always loved to work with projects and people, lately I found design and technology as things I love to deal with and then decided to change my career goal.  <img src={VectorClosed} alt="Vector Closed" /><br /></Styles.SecondTextLine>
-            <Styles.ThirdTextLine> <img src={Vector} alt="Square" /> I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I'm a Front End Developer Lorem ipsum dolor I' <img src={VectorClosed} alt="Vector Closed" /><br /></Styles.ThirdTextLine>
-          </Styles.AboutText> 
-        </Styles.TextABout>
         }
     </Styles.Container>
   )
