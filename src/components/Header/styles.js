@@ -25,7 +25,7 @@ export const LastContainer = styled.div`
     margin-top: ${px2vw(28)};
 
     @media ${device.mobileM}{
-        margin-top: ${px2vw(1000)};
+        margin-top: ${px2vw(1050)};
         margin-left: ${px2vw(-650)};
     }
 `
@@ -83,6 +83,6 @@ export const AboutButton = styled.button`
       display: table-row;
       padding: ${px2vw(30)} ${px2vw(100)};
       font-size: ${px2vw(40)};
-      border-radius: 50% 50% 0 50%;
+      
     }
 `
