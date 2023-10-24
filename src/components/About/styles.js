@@ -91,8 +91,6 @@ export const AboutText = styled.div`
         margin-top: ${px2vw(130)};
         margin-left: ${px2vw(-200)};
         line-height: ${px2vw(50)};
-
-        overflow: scroll;
     }
     
 `
