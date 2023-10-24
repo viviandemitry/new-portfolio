@@ -35,7 +35,7 @@ export const Title = styled.h2`
     line-height: 180%;
 
     @media ${device.mobileM}{
-        margin-top: ${px2vw(350)};
+        margin-top: ${px2vw(300)};
         margin-left: ${px2vw(170)};
         font-size: ${px2vw(80)};
     }
@@ -78,7 +78,7 @@ export const ImgContainer = styled.div`
         display: flex;
         flex-direction: column;
         margin-left: 0;
-        margin-top: ${px2vw(130)};
+        margin-top: ${px2vw(-10)};
         border-radius: 50%;
         width: ${px2vw(850)};
         height: ${px2vw(850)};
