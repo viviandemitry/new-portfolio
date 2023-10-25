@@ -3,12 +3,14 @@ import px2vw from "../../utils/px2vw";
 import { device } from "../../utils/brakePoints";
 
 export const Container = styled.div`
+    position: fixed;
+    z-index: 3;
     display: flex;
-    position: absolute;
     width: 100%;
+    height: 10%;
     background-color: none;
-    /* margin-top: ${px2vw(28)}; */
-    /* margin-left: ${px2vw(140)}; */
+    margin: 0;
+    top: 0;
 
     @media ${device.mobileM}{
       display: table-row;
@@ -17,8 +19,8 @@ export const Container = styled.div`
 `
 export const FirstContainer = styled.div`
     display: flex;
-    margin-left: ${px2vw(140)};
     margin-top: ${px2vw(28)};
+    margin-left: ${px2vw(140)};
 `
 export const LastContainer = styled.div`
     justify-content: end;
@@ -30,10 +32,12 @@ export const LastContainer = styled.div`
     }
 `
 export const NavButton = styled.button`
+    padding: ${px2vw(10)};
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
     background: none;
     border: none;
-    padding: ${px2vw(10)};
-    cursor:pointer;
     
     color: #F2E0CF;
     font-family: Poppins;
@@ -57,7 +61,6 @@ export const NavButton = styled.button`
 
 export const AboutButton = styled.button`
     display: flex;
-    position:relative;
     z-index: 2;
     padding: ${px2vw(10)};
     justify-content: center;
@@ -65,7 +68,7 @@ export const AboutButton = styled.button`
     cursor:pointer;
     background: #DA8537;
     border: none;
-    margin-left: ${px2vw(780)};
+    margin-left: ${px2vw(750)};
 
     color: #F2E0CF;
     font-family: Poppins;

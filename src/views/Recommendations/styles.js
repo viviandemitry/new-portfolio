@@ -8,6 +8,10 @@ export const Container = styled.div`
     overflow: hidden;
 
     background: #15655B;
+
+    @media ${device.mobileM}{
+        overflow: scroll;
+     }
 `
 export const MainContainer = styled.div`
     width: 100%;
@@ -78,7 +82,7 @@ export const ImgContainer = styled.div`
         display: flex;
         flex-direction: column;
         margin-left: 0;
-        margin-top: ${px2vw(-10)};
+        margin-top: ${px2vw(10)};
         border-radius: 50%;
         width: ${px2vw(850)};
         height: ${px2vw(850)};
@@ -119,9 +123,9 @@ export const TextContainer = styled.p`
     @media ${device.mobileM}{
         margin-top: ${px2vw(120)};
         font-size: ${px2vw(60)};
-        width: ${px2vw(850)};
+        width: ${px2vw(950)};
         margin-left: 0;
         padding: 0;
-        margin-bottom: ${px2vw(300)};
+        margin-bottom: ${px2vw(200)};
      }
 `  

@@ -38,16 +38,17 @@ export const Icons = styled.div`
     }
 
     @media ${device.mobileM}{
-        display: flex;
+        position: fixed;
         height: ${px2vw(180)};
         padding-top: ${px2vw(300)};
         padding-bottom: ${px2vw(-80)};
+        z-index: 2;
     }
 ` 
 
 export const ContainerBottom = styled.div`
-    display: flex;
-    margin-top: ${px2vw(30)};
+        display: flex;
+        margin-top: ${px2vw(30)};
 
     @media ${device.mobileM}{
         margin-left: ${px2vw(30)};
@@ -61,7 +62,7 @@ export const ContainerProjects = styled.div`
         
         @media ${device.mobileM}{
         flex-direction: column;
-        margin-top: ${px2vw(-650)};
+        margin-top: ${px2vw(-250)};
         margin-left: ${px2vw(250)};
      }
 `
@@ -82,12 +83,12 @@ export const Title = styled.h2`
     line-height: 180%;
 
     @media ${device.mobileM}{
-        width: ${px2vw(200)};
+        /* width: ${px2vw(200)};
         height: ${px2vw(200)};
-        margin-left: 0;
-        margin-top: ${px2vw(10)};
-
+        margin-left: 0; */
+        margin-top: ${px2vw(350)};
         font-size: ${px2vw(150)};
+        z-index: 1;
      }
 `
 export const Link = styled.a`

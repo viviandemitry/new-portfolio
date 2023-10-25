@@ -35,7 +35,6 @@ export const Container = styled.div`
             height: 0;
             animation-name: none;
             }
-
         }
 `
 
@@ -46,7 +45,7 @@ export const TextABout = styled.div`
     margin-left: ${px2vw(800)};
 
     @media ${device.mobileM}{
-        width: 100vw;
+        width: 80vw;
     }
 `
 
@@ -63,8 +62,6 @@ export const TitleAbout = styled.h2`
         margin-top: ${px2vw(-150)};
         margin-left: ${px2vw(750)};
         font-size: ${px2vw(100)};
-        
-
     }
 `
 
@@ -87,7 +84,7 @@ export const AboutText = styled.div`
     }
 
     @media ${device.mobileM}{
-        width: 100vw;
+        width: 80vw;
         margin-top: ${px2vw(130)};
         margin-left: ${px2vw(-200)};
         line-height: ${px2vw(50)};
@@ -147,7 +144,7 @@ export const ContentTexts = styled.div`
         margin-left: ${px2vw(180)};
         margin-top:  ${px2vw(60)};
         font-size:${px2vw(40)};
-        padding: ${px2vw(60)};
+        /* padding: ${px2vw(60)}; */
 
         img {
             width: ${px2vw(480)};
