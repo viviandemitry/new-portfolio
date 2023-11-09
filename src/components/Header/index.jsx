@@ -34,8 +34,8 @@ export default function Header() {
  }
 
 return (
-    <Styles.Container>
-      <Styles.FirstContainer>
+    <Styles.Container local={location.pathname}>
+      <Styles.FirstContainer local={location.pathname}>
         <Styles.NavButton onClick={goHome} local={location.pathname}>
          HOME
         </Styles.NavButton>

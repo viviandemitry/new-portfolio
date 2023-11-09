@@ -17,7 +17,6 @@ const transitionAbout = keyframes`
 export const Container = styled.div`
     width: 55vw;
     height: 100vh;
-    padding: 60px;
 
     background-repeat: no-repeat;
     background-color: #F2E0CF; 
@@ -26,7 +25,7 @@ export const Container = styled.div`
     animation-fill-mode: forwards;
 
     @media ${device.mobileM}{
-            width: 80vw;
+            width: 100%;
             height: 100vh;
             animation: none;
 
@@ -43,15 +42,17 @@ export const TextABout = styled.div`
     width: 55%;
     height:90%;
     margin-left: ${px2vw(800)};
+    padding: 60px;
 
     @media ${device.mobileM}{
-        width: 80vw;
+        width: 80%;
     }
 `
 
 export const TitleAbout = styled.h2`
     color: #DA8537;
-    margin-top: ${px2vw(-50)}; 
+    margin-top: ${px2vw(30)}; 
+    margin-left: ${px2vw(50)}; 
     font-family: Playfair Display;
     font-size: ${px2vw(60)};
     font-style: normal;
@@ -59,7 +60,7 @@ export const TitleAbout = styled.h2`
     line-height: 120%; 
 
     @media ${device.mobileM}{
-        margin-top: ${px2vw(-150)};
+        margin-top: ${px2vw(90)};
         margin-left: ${px2vw(650)};
         font-size: ${px2vw(100)};
     }
@@ -86,14 +87,14 @@ export const AboutText = styled.div`
     @media ${device.mobileM}{
         width: 80vw;
         margin-top: ${px2vw(130)};
-        margin-left: ${px2vw(-200)};
+        margin-left: ${px2vw(100)};
         line-height: ${px2vw(50)};
     }
     
 `
 export const ContentTextsLeft = styled.div`
     display: flex;
-    margin-left: ${px2vw(20)};
+    margin-left: ${px2vw(50)};
     margin-top:  ${px2vw(-15)};
 
     animation-name: ${transitionAbout};
