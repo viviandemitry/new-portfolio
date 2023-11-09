@@ -46,7 +46,8 @@ export const Title = styled.h2`
     line-height: 120%;
 
     @media ${device.mobileM}{
-        margin-top: ${px2vw(-250)};
+        position: static;
+        margin-top: ${px2vw(5)};
         font-size: ${px2vw(90)};
         width: 80vw;
     }
@@ -65,7 +66,7 @@ export const Text = styled.p`
     line-height: 180%; 
 
     @media ${device.mobileM}{
-        margin-top: ${px2vw(600)};
+        margin-top: ${px2vw(200)};
         margin-bottom: ${px2vw(100)};
         font-size: ${px2vw(40)};
         width: 80vw;

@@ -10,7 +10,6 @@ export const Container = styled.div`
 
     @media ${device.mobileM}{
         display:table-row;
-        border: solid red;
         width: 100vw;
         height: 100vh;
     }
