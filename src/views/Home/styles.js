@@ -81,7 +81,6 @@ export const TextColor = styled.span`
 export const ImgContainer = styled.div`
     width: 50%;
     height: 100vh;
-    overflow: hidden;
 
     img {
         width:55%;

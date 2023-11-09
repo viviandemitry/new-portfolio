@@ -13,8 +13,9 @@ export const Container = styled.div`
     top: 0;
 
     @media ${device.mobileM}{
-      display: table-row;
-      width: 100%;
+        
+        display: table-row;
+        width: 100%;
     }
 `
 export const FirstContainer = styled.div`
@@ -83,9 +84,10 @@ export const AboutButton = styled.button`
     }
 
     @media ${device.mobileM}{
-      display: table-row;
-      padding: ${px2vw(30)} ${px2vw(100)};
-      font-size: ${px2vw(40)};
+        display: table-row;
+        margin-top: ${px2vw(-80)};
+        padding: ${px2vw(30)} ${px2vw(100)};
+        font-size: ${px2vw(40)};
       
     }
 `
