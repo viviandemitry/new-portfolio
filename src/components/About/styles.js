@@ -26,7 +26,7 @@ export const Container = styled.div`
     animation-fill-mode: forwards;
 
     @media ${device.mobileM}{
-            width: 100vw;
+            width: 80vw;
             height: 100vh;
             animation: none;
 
@@ -60,7 +60,7 @@ export const TitleAbout = styled.h2`
 
     @media ${device.mobileM}{
         margin-top: ${px2vw(-150)};
-        margin-left: ${px2vw(750)};
+        margin-left: ${px2vw(650)};
         font-size: ${px2vw(100)};
     }
 `
@@ -150,7 +150,7 @@ export const ContentTexts = styled.div`
             width: ${px2vw(480)};
             height: ${px2vw(520)};
             transform: rotate(10deg);  
-            margin-left: ${px2vw(50)};
+            margin-left: ${px2vw(-30)};
             padding-left: ${px2vw(60)};
         }
   
@@ -173,7 +173,7 @@ export const SecondTextLine = styled.p`
     @media ${device.mobileM}{
         width: ${px2vw(700)};
         color: rgba(21, 101, 91, 0.95);
-        margin-left: ${px2vw(-150)};
+        margin-left: ${px2vw(-160)};
     }
 
 `
