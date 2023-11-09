@@ -13,9 +13,10 @@ export const Container = styled.div`
     top: 0;
 
     @media ${device.mobileM}{
-        
+        position:static;
         display: table-row;
         width: 100%;
+        background-color: ${(props) => props.local === "/projects" ? "#DA8537;" : "none"};
     }
 `
 export const FirstContainer = styled.div`
@@ -28,8 +29,9 @@ export const LastContainer = styled.div`
     margin-top: ${px2vw(28)};
 
     @media ${device.mobileM}{
-        margin-top: ${px2vw(1050)};
-        margin-left: ${px2vw(-650)};
+        position: relative;;
+        top: ${px2vw(1050)};
+        right: ${px2vw(600)};
     }
 `
 export const NavButton = styled.button`
@@ -84,7 +86,6 @@ export const AboutButton = styled.button`
     }
 
     @media ${device.mobileM}{
-        display: table-row;
         margin-top: ${px2vw(-80)};
         padding: ${px2vw(30)} ${px2vw(100)};
         font-size: ${px2vw(40)};

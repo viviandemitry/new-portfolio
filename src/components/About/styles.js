@@ -26,7 +26,7 @@ export const Container = styled.div`
 
     @media ${device.mobileM}{
             width: 100%;
-            height: 100vh;
+            height: 100%;
             animation: none;
 
             img{
