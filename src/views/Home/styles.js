@@ -87,8 +87,8 @@ export const ImgContainer = styled.div`
         width:55%;
         height: auto;
         transform: rotate(10deg);
-        margin-top: 150px;
-        margin-left: 150px;
+        margin-top: ${px2vw(150)};
+        margin-left: ${px2vw(150)};
 
         &:hover {
             transform: rotate(9deg);  
@@ -105,8 +105,8 @@ export const ImgContainer = styled.div`
         width: 60%;
         margin-top: ${px2vw(300)};
         margin-left: ${px2vw(380)};
-        padding: 20px;
-        height: 56vh;
+        padding: ${px2vw(20)};
+        height: 56%;
     }
 `
 
