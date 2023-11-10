@@ -18,7 +18,7 @@ export const Container = styled.div`
     @media ${device.mobileM}{
         display: table-row;     
         width: 100vw;
-        verflow: scroll;
+        overflow: scroll;
     }
 `
 
@@ -49,7 +49,7 @@ export const Title = styled.h2`
         position: static;
         margin-top: ${px2vw(5)};
         font-size: ${px2vw(90)};
-        width: 80vw;
+        width: 80%;
     }
 ` 
 
@@ -69,7 +69,7 @@ export const Text = styled.p`
         margin-top: ${px2vw(200)};
         margin-bottom: ${px2vw(100)};
         font-size: ${px2vw(40)};
-        width: 80vw;
+        width: 80%;
     }
 `
 

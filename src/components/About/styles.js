@@ -15,8 +15,9 @@ const transitionAbout = keyframes`
 `
 
 export const Container = styled.div`
-    width: 55vw;
-    height: 100vh;
+    width: 55%;
+    height: 100%;
+    /* overflow: scroll; */
 
     background-repeat: no-repeat;
     background-color: #F2E0CF; 
@@ -145,7 +146,6 @@ export const ContentTexts = styled.div`
         margin-left: ${px2vw(180)};
         margin-top:  ${px2vw(60)};
         font-size:${px2vw(40)};
-        /* padding: ${px2vw(60)}; */
 
         img {
             width: ${px2vw(480)};
