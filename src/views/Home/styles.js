@@ -81,13 +81,14 @@ export const TextColor = styled.span`
 
 export const ImgContainer = styled.div`
     width: 50%;
-    height: 100vh;
+    height: 100%;
 
     img {
         width:55%;
         height: auto;
         transform: rotate(10deg);
-        padding: 140px;
+        margin-top: 150px;
+        margin-left: 150px;
 
         &:hover {
             transform: rotate(9deg);  
