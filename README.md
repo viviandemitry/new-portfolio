@@ -1,6 +1,6 @@
 # Portfolio
 
-Check here: https://new-portfolio-ecru-two.vercel.app/   *IT'S NOT READY YET.
+Check here: https://portfolio.viviandemitry.vercel.app/projects
 
 Design
 + Figma
