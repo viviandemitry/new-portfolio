@@ -16,8 +16,7 @@ export const Container = styled.div`
 
 export const Icons = styled.div`
     width: 100%;
-    height: auto;
-    padding-top: ${px2vw(80)};
+    padding-top: ${px2vw(100)};
     column-gap: ${px2vw(20)};
 
     background: #DA8537;
@@ -47,7 +46,6 @@ export const Icons = styled.div`
 
 export const ContainerBottom = styled.div`
         display: flex;
-        margin-top: ${px2vw(30)};
 
     @media ${device.mobileM}{
         position: static;
@@ -62,7 +60,6 @@ export const ContainerProjects = styled.div`
         
         @media ${device.mobileM}{
         flex-direction: column;
-        /* margin-top: ${px2vw(-250)}; */
         margin-left: ${px2vw(250)};
      }
 `
