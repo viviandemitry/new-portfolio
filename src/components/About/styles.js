@@ -5,8 +5,8 @@ import Photo from '../../assets/images/polaroid-home.png';
 
 
 const transition = keyframes`
-    0% {  width: 50%; height: 100vh; background-size: 100%; background-position: left 100% top 0; }
-    100% {  width: 52%; height: 100vh; background-size: 135%; background-position: left 100% top 0; }
+    0% {  width: 50%; height: 100%; background-size: 100%; background-position: left 100% top 0; }
+    100% {  width: 52%; height: 100%; background-size: 135%; background-position: left 100% top 0; }
 `
 
 const transitionAbout = keyframes`
@@ -17,8 +17,7 @@ const transitionAbout = keyframes`
 export const Container = styled.div`
     width: 55%;
     height: 100%;
-    /* overflow: scroll; */
-
+    
     background-repeat: no-repeat;
     background-color: #F2E0CF; 
     animation-name: ${transition};
@@ -77,9 +76,7 @@ export const AboutText = styled.div`
     font-size: ${px2vw(16)};
     font-style: normal;
     font-weight: 300;
-    line-height: 180%; /* 36px */ 
     
-
     img{
         width: ${px2vw(150)};
         height: ${px2vw(180)};
