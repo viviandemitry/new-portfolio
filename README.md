@@ -1,6 +1,6 @@
 # Portfolio
 
-Check here: https://portfolio.viviandemitry.vercel.app/projects
+Check here: https://portfolio.viviandemitry.vercel.app
 
 Design
 + Figma
