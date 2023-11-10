@@ -8,6 +8,7 @@ import Javascript from '../../assets/icons/javascript.svg';
 import Git from '../../assets/icons/git.svg';
 import Css from '../../assets/icons/css3.svg';
 import RobotWeb from '../../assets/images/robot-website.PNG';
+import CharityWeb from '../../assets/images/charity-website.PNG';
 
 
 export default function Projects() {
@@ -35,22 +36,22 @@ export default function Projects() {
                 Robot Website
               </Styles.ProjectTitle>
           </Styles.Link>
-          <Styles.Link href="https://robot-blog.vercel.app/" target="_blank">
+          <Styles.Link href="https://convent-website.vercel.app/" target="_blank">
+              <Styles.ProjectImg>
+              <img src={CharityWeb} alt="Charity Website" />
+              </Styles.ProjectImg>
+              <Styles.ProjectTitle>
+              Charity Website - In Progress...
+              </Styles.ProjectTitle>
+          </Styles.Link>
+          {/* <Styles.Link href="" target="_blank">
               <Styles.ProjectImg>
               <img src={RobotWeb} alt="Robot Website" />
               </Styles.ProjectImg>
               <Styles.ProjectTitle>
                 Robot Website
               </Styles.ProjectTitle>
-          </Styles.Link>
-          <Styles.Link href="https://robot-blog.vercel.app/" target="_blank">
-              <Styles.ProjectImg>
-              <img src={RobotWeb} alt="Robot Website" />
-              </Styles.ProjectImg>
-              <Styles.ProjectTitle>
-                Robot Website
-              </Styles.ProjectTitle>
-          </Styles.Link>
+          </Styles.Link> */}
         </Styles.ContainerProjects>
       </Styles.ContainerBottom> 
     </Styles.Container>
