@@ -17,6 +17,7 @@ const transitionAbout = keyframes`
 export const Container = styled.div`
     width: 55%;
     height: 100%;
+    overflow: hidden;
     
     background-repeat: no-repeat;
     background-color: #F2E0CF; 
@@ -28,6 +29,7 @@ export const Container = styled.div`
             width: 100%;
             height: 100%;
             animation: none;
+            overflow: scroll;
 
             img{
             width: 0;
