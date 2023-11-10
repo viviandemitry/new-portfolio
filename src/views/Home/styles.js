@@ -26,7 +26,7 @@ export const TextContainer = styled.div`
     width:50%;
 
     @media ${device.mobileM}{     
-        width: 100vw;
+        width: 100%;
     }
 ` 
 
@@ -35,7 +35,7 @@ export const Title = styled.h2`
     width: ${px2vw(700)};
     height: ${px2vw(100)};
     flex-shrink: 0;
-    margin-top: ${px2vw(179)};
+    margin-top: ${px2vw(150)};
     margin-left: ${px2vw(150)};
 
     color: #F2E0CF;
@@ -54,7 +54,7 @@ export const Title = styled.h2`
 ` 
 
 export const Text = styled.p`
-    margin-top: ${px2vw(380)};
+    margin-top: ${px2vw(350)};
     margin-left: ${px2vw(150)};
     width: ${px2vw(450)};
 
