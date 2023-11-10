@@ -26,9 +26,9 @@ export default function Contacts() {
           <Styles.Link href="https://github.com/viviandemitry" target="">
             <img src={Github} alt="Github" />
           </Styles.Link>
-          <Styles.Link href="" target="">
+          {/* <Styles.Link href="" target="">
             <Email />
-          </Styles.Link>
+          </Styles.Link> */}
         </Styles.Icons>
       </Styles.ContainerLeft>
       <Styles.ContainerRight>
