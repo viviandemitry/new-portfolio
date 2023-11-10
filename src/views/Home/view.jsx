@@ -29,7 +29,7 @@ export default function Home() {
             }
             </Styles.Title>
             <Styles.Text>
-            I am an engineer with over four years of experience in project management and development. In 2020, I embarked on a career transition into the field of software engineering. Presently, my primary skills revolve around the development of responsive web pages, emphasizing clean and creative coding practices.
+            I am an engineer with over three years of experience in project management and development. In 2020, I embarked on a career transition into the field of software engineering. Presently, my primary skills revolve around the development of responsive web pages, emphasizing clean and creative coding practices.
             </Styles.Text>
         </Styles.TextContainer>
         { isTransformed ? <About /> :
