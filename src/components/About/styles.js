@@ -40,9 +40,9 @@ export const Container = styled.div`
 export const TextABout = styled.div`
     display: table-row;
     width: 55%;
-    height:90%;
+    height:100%;
     margin-left: ${px2vw(800)};
-    padding: 60px;
+    
 
     @media ${device.mobileM}{
         width: 80%;
@@ -73,7 +73,7 @@ export const AboutText = styled.div`
     margin-top: ${px2vw(50)};
     color:  rgba(21, 101, 91, 0.95);
     font-family: Poppins;
-    font-size: ${px2vw(16)};
+    font-size: ${px2vw(14)};
     font-style: normal;
     font-weight: 300;
     
