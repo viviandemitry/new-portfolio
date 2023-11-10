@@ -18,7 +18,7 @@ export const Container = styled.div`
     @media ${device.mobileM}{
         display: table-row;     
         width: 100vw;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 `
 

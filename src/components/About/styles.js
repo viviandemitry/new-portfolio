@@ -48,6 +48,7 @@ export const TextABout = styled.div`
 
     @media ${device.mobileM}{
         width: 80%;
+        overflow: scroll;
     }
 `
 
