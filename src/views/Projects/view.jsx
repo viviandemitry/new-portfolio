@@ -36,7 +36,7 @@ export default function Projects() {
                 Robot Website
               </Styles.ProjectTitle>
           </Styles.Link>
-          <Styles.Link href="https://convent-website.vercel.app/" target="_blank">
+          <Styles.Link href="https://segredosdoconvento.vercel.app/" target="_blank">
               <Styles.ProjectImg>
               <img src={CharityWeb} alt="Charity Website" />
               </Styles.ProjectImg>
