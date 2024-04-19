@@ -29,7 +29,11 @@ export default function Home() {
             }
             </Styles.Title>
             <Styles.Text>
-            I am an engineer with over three years of experience in project management and development. In 2023, I embarked on a career transition into the field of software engineering. Presently, my primary skills revolve around the development of responsive web pages, emphasizing clean and creative coding practices.
+            Apart from the fact that I am an engineer and am specializing in
+            software engineering through an MBA, I am a Brazilian with a great sense of humor,
+            who loves planning, curious and eager to learn everything I can and need,passionate about optimizing processes, incredibly flexible and can adapt to different environments.
+            Last but not least, I have the talent to create connections and find
+            solutions within my network.
             </Styles.Text>
         </Styles.TextContainer>
         { isTransformed ? <About /> :
