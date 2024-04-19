@@ -32,7 +32,7 @@ export default function Contacts() {
         </Styles.Icons>
       </Styles.ContainerLeft>
       <Styles.ContainerRight>
-        <Styles.Link href="https://drive.google.com/file/d/1UGzvoYtrkgoKcjS1tSbbZMbGciU5s9ji/view?usp=drive_link" target="">
+        <Styles.Link href="https://drive.google.com/file/d/18GSjvrPrPU9tusvTjy5PcYNtIkVp_yKD/view?usp=drive_link" target="">
           <img src={Resume} alt="Resume" />
           <Styles.RightText>
             Check <br /> my CV! 
